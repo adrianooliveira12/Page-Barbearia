@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
+    
       href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
@@ -17,13 +19,14 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Barba e Estilo </title>
   </head>
   <body>
     <div class="bg-home">
       <header>
         <nav class="header-content container">
-          <div class="header-icons">
+          <div class="header-icons" data-aos="fade-down">
             <a href="#">
               <i class="fa-brands fa-instagram fa-2x"></i>
             </a>
@@ -34,17 +37,18 @@
               <i class="fa-brands fa-tiktok fa-2x"></i>
             </a>
           </div>
-          <div class="header-logo">
-            <img src="assets/logo.svg" alt="logo da barbearia" />
+          <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
+            <img data-aos="flip-up"data-aos-delay="300"data-aos-duration="1500"
+            src="assets/logo.svg" alt="logo da barbearia" />
           </div>
-          <div>
-            <a class="header-button" href="#"> Agendar Horário </a>
+          <div data-aos="fade-down">
+            <a class="header-button" href="https://wa.me/5544999984603" target="_blank"> Agendar Horário </a>
           </div>
         </nav>
-        <main class="hero container">
+        <main class="hero container" data-aos="fade-up"data-aos-delay="300">
           <h1>Estilo é um Reflexo da sua Atitude e sua Personalidade.</h1>
           <p>Horário de Funcionamento:9:00 ás 19:00</p>
-          <a href="#" class="button-contact" target="_blank">
+          <a href="https://wa.me/5544999984603" class="button-contact" target="_blank">
             Agendar Horário
           </a>
         </main>
@@ -52,10 +56,11 @@
     </div>
     <section class="about">
       <div class="container about-content">
-        <div>
+        <div data-aos="zoom-in"data-aos-delay="100">
           <img src="./assets/images.svg" alt="imagem barbearia" />
         </div>
-        <div class="about-description">
+        <div data-aos="zoom-in-left"data-aos-delay="200"
+        class="about-description">
           <h2>Sobre</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas,
@@ -81,7 +86,7 @@
       </div>
       <section class="haircuts">
 
-        <div class="haircut">
+        <div class="haircut" data-aos="fade-up"data-aos-delay="150">
           <img
            src="assets/corte1.png"
             alt="corte normal" />
@@ -90,7 +95,7 @@
             <button>R$ 35,00</button>
           </div>
         </div>
-        <div class="haircut">
+        <div class="haircut" data-aos="fade-up"data-aos-delay="250">
           <img 
           src="assets/corte2.png"
            alt="corte e barba" />
@@ -99,7 +104,7 @@
             <button>R$ 55,00</button>
           </div>
         </div>
-        <div class="haircut">
+        <div class="haircut"data-aos="fade-up"data-aos-delay="350">
           <img src="assets/corte3.png" alt="corte e barba" />
           <div class="haircut-info">
             <strong>Corte Personalizado</strong>
@@ -136,13 +141,15 @@
 
     </footer>
     <a
-     href="#"
+     href="https://wa.me/5544999984603"
      class="btn-whatsapp"
      target="_blank"
+     data-aos="zoom-in-up"data-aos-delay="400"
      >
      <img src="assets/whatssapp.svg" alt="whatssapp">
      <span class="tooltip-text">Agende seu Horário</span>
      
     </a>
+    <script src="./script.js"></script>
   </body>
 </html>
